@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISA Football Academy | Programs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1D4ED8',
+                        secondary: '#F59E0B',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-dark text-white fixed w-full z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html"
+                        class="nav-brand text-lg md:text-xl font-bold tracking-wider flex items-center gap-3">
+                        <img src="C:\Users\Fawaz\OneDrive\Music\isa.html\assets\img\WhatsApp_Image_2025-10-25_at_23.26.09_e8b81214-removebg-preview (2).png" alt="Logo"
+                            class="h-12 md:h-16 w-auto object-contain mix-blend-lighten">
+                        <span class="text-white">Issadeen <span class="text-secondary">Soccer</span> Academy</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white transition-colors px-3 py-2 text-sm uppercase tracking-wide">Home</a>
+                        <a href="about.html"
+                            class="text-gray-300 hover:text-white transition-colors px-3 py-2 text-sm uppercase tracking-wide">About
+                            Us</a>
+                        <a href="programs.html"
+                            class="text-secondary font-semibold hover:text-secondary transition-colors px-3 py-2 text-sm uppercase tracking-wide">Programs</a>
+                        <a href="contact.html"
+                            class="text-gray-300 hover:text-white transition-colors px-3 py-2 text-sm uppercase tracking-wide">Contact</a>
+                        <a href="contact.html"
+                            class="bg-secondary text-dark font-bold px-5 py-2 rounded-full hover:bg-yellow-400 transition-colors uppercase tracking-wide text-sm">Join
+                            Now</a>
+                    </div>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 font-medium uppercase">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-white block px-3 py-2 font-medium uppercase">About
+                    Us</a>
+                <a href="programs.html" class="text-secondary block px-3 py-2 font-medium uppercase">Programs</a>
+                <a href="contact.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 font-medium uppercase">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header
+        class="pt-20 bg-dark text-white relative py-20 flex items-center justify-center border-b-4 border-secondary overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="assets/img/programs.png" alt="Training Drills"
+                class="w-full h-full object-cover object-center opacity-40 blur-sm"
+                onerror="this.src='https://images.unsplash.com/photo-1518605368461-1ee7aca68425?auto=format&fit=crop&q=80'">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark to-dark/50"></div>
+        </div>
+        <div class="relative z-10 text-center animate-fade-in stagger-1">
+            <h1 class="text-5xl md:text-6xl font-bold uppercase mb-4">Training <span
+                    class="text-secondary">Programs</span></h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto mb-2">Developed for Champions of All Ages</p>
+            <div class="flex items-center justify-center text-sm text-gray-400 gap-2 mt-4">
+                <a href="index.html" class="hover:text-white">Home</a>
+                <span>/</span>
+                <span class="text-secondary">Programs</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-fade-in stagger-2">
+                <h2 class="text-sm font-bold text-primary tracking-widest uppercase mb-2">Elite Training</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-gray-900 uppercase">Find Your <span
+                        class="text-secondary">Level</span></h3>
+                <div class="w-24 h-1 bg-secondary mx-auto mt-6"></div>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+                    Whether you're taking your first steps on the pitch or looking to sign a professional contract, we
+                    have the right program structured specifically for your development phase.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-20">
+                <!-- Program 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <div class="h-48 bg-primary relative">
+                        <img src="c:\Users\Fawaz\OneDrive\Music\isa.html\assets\img\WhatsApp Image 2026-11-17 at 12.23.36 AM.jpeg"
+                            alt="Kids playing" class="w-full h-full object-cover opacity-80 mix-blend-overlay">
+                        <div class="absolute inset-0 bg-primary/40"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-dark/90 to-transparent">
+                            <h4 class="text-2xl font-bold text-white uppercase">Grassroots</h4>
+                            <div
+                                class="mt-1 inline-flex items-center bg-secondary text-dark text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
+                                Ages U6 - U10</div>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <p class="text-gray-600 mb-6 flex-grow">
+                            An introduction to football focused on fun, basic motor skills, and fundamental ball
+                            mastery. Emphasizing a love for the game over competition.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Advanced technical skills
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Game awareness & positioning
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> 1 Training sessions / week
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Weekend league participation
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Video analysis & scouting
+                            </li>
+                        </ul>
+                        <div class="mt-auto border-t border-gray-100 pt-6">
+                            <a href="contact.html"
+                                class="block w-full text-center bg-gray-100 hover:bg-primary hover:text-white text-gray-900 font-bold uppercase py-3 rounded-lg transition-colors border border-gray-200">
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-2xl border-2 border-secondary overflow-hidden flex flex-col transform md:-translate-y-4 hover:-translate-y-6 relative z-10">
+                    <div <div class="h-48 bg-dark relative">
+                        <img src="c:\Users\Fawaz\OneDrive\Music\isa.html\assets\img\WhatsApp Image 2026-11-17 at 12.23.35 AM.jpeg"
+                            alt="Teens training" class="w-full h-full object-cover opacity-80 mix-blend-overlay">
+                        <div class="absolute inset-0 bg-dark/60"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-dark/90 to-transparent">
+                            <h4 class="text-2xl font-bold text-secondary uppercase">Development</h4>
+                            <div
+                                class="mt-1 inline-flex items-center bg-white text-dark text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
+                                Ages U10 - U13</div>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col relative">
+                        <p class="text-gray-600 mb-6 flex-grow">
+                            Focusing on technical proficiency, tactical understanding, and positional play. For players
+                            looking to elevate their game to a competitive level.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Advanced technical skills
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Game awareness & positioning
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> 1 Training sessions / week
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Weekend league participation
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Video analysis & scouting
+                            </li>
+                        </ul>
+                        <div class="mt-auto border-t border-gray-100 pt-6">
+                            <div class="flex items-end justify-between mb-4">
+                            </div>
+                            <a href="contact.html"
+                                class="block w-full text-center bg-primary hover:bg-blue-800 text-white font-bold uppercase py-3 rounded-lg shadow-md transition-all">
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden flex flex-col hover:-translate-y-2 transition-transform duration-300">
+                    <div class="h-48 bg-gray-800 relative">
+                        <img src="c:\Users\Fawaz\OneDrive\Music\isa.html\assets\img\WhatsApp Image 2026-11-20 at 12.37.34 AM.jpeg"
+                            alt="Adults training"
+                            class="w-full h-full object-cover opacity-80 border-b-2 border-white mix-blend-overlay">
+                        <div class="absolute inset-0 bg-gray-900/40"></div>
+                        <div class="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-dark/90 to-transparent">
+                            <h4 class="text-2xl font-bold text-white uppercase">Elite Squad</h4>
+                            <div
+                                class="mt-1 inline-flex items-center bg-secondary text-dark text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">
+                                Ages U14 - U16</div>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col">
+                        <p class="text-gray-600 mb-6 flex-grow">
+                            High-intensity, professional-style training designed to prepare players for college,
+                            semi-pro, or professional football opportunities.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Advanced technical skills
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Game awareness & positioning
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> 1 Training sessions / week
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Weekend league participation
+                            </li>
+                            <li class="flex items-center gap-3 text-sm text-gray-700">
+                                <i class="fa-solid fa-check text-secondary"></i> Video analysis & scouting
+                            </li>
+                        </ul>
+                        <div class="mt-auto border-t border-gray-100 pt-6">
+                            <div class="flex items-end justify-between mb-4">
+                                <div>
+
+                                </div>
+                            </div>
+                            <a href="contact.html"
+                                class="block w-full text-center bg-gray-100 hover:bg-dark hover:text-white text-gray-900 font-bold uppercase py-3 rounded-lg transition-colors border border-gray-200">
+                                Register Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Facilities Banner -->
+            <div class="bg-dark rounded-3xl overflow-hidden relative shadow-2xl">
+                <div
+                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1529900965600-34fa525cb8aa?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-30 mix-blend-luminosity">
+                </div>
+                <div class="absolute inset-0 bg-gradient-to-r from-dark to-primary/40"></div>
+
+                <div class="relative z-10 p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10">
+                    <div class="md:w-2/3">
+
+                        <h3 class="text-3xl md:text-5xl font-bold text-white uppercase mb-6 leading-tight">Train Where
+                            <br><span
+                                class="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">Professionals
+                                Train</span>
+                        </h3>
+                        <p class="text-gray-300 text-lg max-w-xl">
+                            Our academy utilizes Pro certified pitches, featuring the latest in sports turf
+                            technology, alongside fully-equipped performance gyms and dedicated video analysis rooms.
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 flex justify-center md:justify-end">
+                        <a href="contact.html"
+                            class="bg-secondary text-dark font-bold text-lg px-8 py-4 rounded-full hover:bg-yellow-400 hover:shadow-lg hover:shadow-secondary/50 transition-all transform hover:-translate-y-1 uppercase tracking-wide flex items-center gap-3">
+                            Book a Tour <i class="fa-solid fa-calendar-check"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-12 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html"
+                        class="nav-brand text-lg md:text-xl font-bold text-white tracking-wider flex items-center gap-3 mb-4">
+                        <img src="C:\Users\Fawaz\OneDrive\Music\isa.html\assets\img\WhatsApp_Image_2025-10-25_at_23.26.09_e8b81214-removebg-preview (2).png" alt="Logo"
+                            class="h-12 md:h-16 w-auto object-contain mix-blend-lighten">
+                        <span>Issadeen <span class="text-secondary">Soccer</span> Academy</span>
+                    </a>
+                    <p class="text-sm mb-4">Developing the next generation of football champions through elite training,
+                        dedication, and passion.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="programs.html" class="hover:text-secondary transition-colors">Training Programs</a>
+                        </li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact &
+                                Registration</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase tracking-wider">Contact Us</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-secondary"></i>
+                            <span>+94 71 556 4673</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-secondary"></i>
+                            <span>issadeensocceracademy@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2026 ISA Football Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
